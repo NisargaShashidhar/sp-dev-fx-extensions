@@ -119,6 +119,7 @@ export const loadingSpinnerStyles: Partial<ISpinnerStyles> = {
 export const getStyles = (): ITfLStatusChatWindowStyles => {
 
     return mergeStyleSets({
+
         chatButtonIcon: {
             color: getThemeColor("neutralPrimary"),
         },
@@ -126,15 +127,24 @@ export const getStyles = (): ITfLStatusChatWindowStyles => {
             position: 'fixed',
             bottom: '50px',
             right: '20px',
-            zIndex: 1000
+            zIndex: 1000,
+            
         },
         chatWindow: {
             backgroundColor: getThemeColor("neutralLighter"),
             color: getThemeColor("neutralPrimary"),
             padding: '10px',
             width: '350px',
+            maxHeight: `${window.innerHeight * 0.5}px`,
             boxSizing: 'border-box',
             overflow: 'auto',
+            overflowY: 'scroll',
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            '&::-webkit-scrollbar': {
+                width: 0,
+                height: 0
+            },
             '.rce-avatar': {
                 borderRadius: '50%',
             },
