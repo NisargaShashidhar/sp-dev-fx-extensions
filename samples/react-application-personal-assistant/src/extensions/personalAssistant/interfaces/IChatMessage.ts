@@ -4,6 +4,7 @@ export interface IChatMessage {
     avatar?: string;
     title: string;
     text: string | JSX.Element;
+    msg?: string;
     date: Date;
     focus?: boolean;
     status? : "waiting" | "sent" | "received" | "read";
