@@ -34,3 +34,11 @@ export const getSystemMessage = (systemMessage: string) => {
         content: systemMessage
     };
 }
+
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export const getBotMessage = (botMessage: string) => {
+    return {
+        role: 'assistant',
+        content: botMessage
+    };
+}

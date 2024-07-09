@@ -10,7 +10,7 @@ Answer should be embedded in html tags surrounded in <span></span>.
 Use <b> or <i> tags to highlight the answer where needed. 
 Use <ul> and <li> tags for lists. 
 For events and tasks note that today is ${new Date()}.`;
-export const CHAT_TEXT_PLACEHOLDER: string = "Enter your query here...";
+export const CHAT_TEXT_PLACEHOLDER: string = "Ask a question here...";
 export const FUNCTIONS = [
     {
         "name": "getMyDetails",
